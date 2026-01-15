@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HEADER WITH NAVIGATION -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Book<span>Nook</span></div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Welcome to My Book Reviews</h1>
+            <p>Discover my thoughts on the books I've read, from thrilling mysteries to heartwarming classics. Join me on my literary journey!</p>
+            <a href="#reviews" class="btn">Explore Reviews</a>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        <!-- RECENT REVIEWS SECTION -->
+        <section id="reviews">
+            <h2 class="section-title">Recent Book Reviews</h2>
+            <div class="reviews-grid">
+                <!-- BOOK 1 -->
+                <div class="book-card">
+                    <div class="book-cover" style="background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="book-info">
+                        <h3 class="book-title">The Silent Witness</h3>
+                        <p class="book-author">By Clara Bennett</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="book-description">A gripping mystery that keeps you guessing until the very last page. The characters are well-developed and the plot twists are unexpected.</p>
+                        <a href="#" class="read-more">Read Full Review →</a>
+                    </div>
+                </div>
+                
+                <!-- BOOK 2 -->
+                <div class="book-card">
+                    <div class="book-cover" style="background-image: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="book-info">
+                        <h3 class="book-title">Echoes of Tomorrow</h3>
+                        <p class="book-author">By Marcus Chen</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="book-description">A brilliant sci-fi novel that explores the consequences of time travel. The world-building is exceptional and thought-provoking.</p>
+                        <a href="#" class="read-more">Read Full Review →</a>
+                    </div>
+                </div>
+                
+                <!-- BOOK 3 -->
+                <div class="book-card">
+                    <div class="book-cover" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="book-info">
+                        <h3 class="book-title">The Last Summer</h3>
+                        <p class="book-author">By Eleanor Rose</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="book-description">A beautiful coming-of-age story about friendship, love, and self-discovery. The prose is lyrical and the characters feel real.</p>
+                        <a href="#" class="read-more">Read Full Review →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2 class="section-title">About Me & This Blog</h2>
+            <div class="about-content">
+                <div class="about-image"></div>
+                <div class="about-text">
+                    <h3>Hello, I'm Alex!</h3>
+                    <p>I've been an avid reader since childhood, and this blog is my way of sharing my passion for books with others. I read across many genres but have a special love for mystery, science fiction, and literary fiction.</p>
+                    <p>My goal is to help others find books they'll love and to create a space for thoughtful discussion about literature. I believe every book has something to offer, whether it's a life lesson, a moment of escape, or a new perspective.</p>
+                    <p>I typically read 2-3 books per month and post reviews here. I also enjoy participating in book clubs and attending literary events when possible.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" placeholder="What is this regarding?" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" placeholder="Tell me about book recommendations, suggestions, or just say hello!" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-goodreads"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <p class="copyright">© 2023 BookNook - Personal Book Review Blog. All rights reserved.</p>
+            <p class="copyright">Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> and lots of reading</p>
+        </div>
+    </footer>
+
+    <!-- SIMPLE JAVASCRIPT FOR MOBILE MENU -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu after click
+                const navMenu = document.getElementById('navMenu');
+                navMenu.classList.remove('show');
+            });
+        });
+        
+        // Simple form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+
+    
