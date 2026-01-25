@@ -153,41 +153,8 @@
             <p class="copyright">Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> and lots of reading</p>
         </div>
     </footer>
-
-    <!-- SIMPLE JAVASCRIPT FOR MOBILE MENU -->
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
-            const navMenu = document.getElementById('navMenu');
-            navMenu.classList.toggle('show');
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu after click
-                const navMenu = document.getElementById('navMenu');
-                navMenu.classList.remove('show');
-            });
-        });
-        
-        // Simple form submission handler
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            this.reset();
-        });
-    </script>
 </body>
 </html>
 
     
+
